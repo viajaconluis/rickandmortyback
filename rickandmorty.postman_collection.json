@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "fbbf947f-b5aa-4697-a8e8-31b6afba95d0",
+		"name": "rickandmorty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27864697"
+	},
+	"item": [
+		{
+			"name": "SLIDE GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/mostrar-slide",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"mostrar-slide"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SLIDE POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "archivo",
+							"type": "file",
+							"src": "/C:/xampp/htdocs/angular/src/assets/img/slide/slide04.jpg"
+						},
+						{
+							"key": "titulo",
+							"value": "Lorem ipsum 4.",
+							"type": "default"
+						},
+						{
+							"key": "descripcion",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/crear-slide",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"crear-slide"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
